@@ -19,7 +19,7 @@ public class Test21StreamService {
             log.debug("Client-consumer retrieved object for processing:" + userCheckRabbitObject);
             queue.channelUserCheck().send(MessageBuilder.withPayload((new ObjectMapper()).writeValueAsString(userCheckRabbitObject)).build());
         } catch (JsonProcessingException e) {
-            e.printStackTrace();
+            log.error("Something went wrong " + e.getMessage());
         }
     }
 }

@@ -37,9 +37,8 @@ public class ListenerService {
             log.info("Object " + object + "successfully saved to DB");
 
         } catch (JsonProcessingException e) {
-            e.printStackTrace();
+           log.error("Something went wrong " + e.getMessage());
         }
-        System.out.println(request);
     }
 
 }
