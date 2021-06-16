@@ -1,0 +1,36 @@
+{
+	"info": {
+		"_postman_id": "95709b89-4e94-4bc2-a1b2-c78c67ed1e97",
+		"name": "test21",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\": \"User Name\",  \r\n\"checked\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/check-user",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"check-user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
